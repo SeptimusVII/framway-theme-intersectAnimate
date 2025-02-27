@@ -32,6 +32,9 @@
 .animate--fadeIn{ opacity: 0; filter: blur(5px);
   &.show{opacity: 1;filter: blur(0px);}
 }
+.animate--scaleUp{ scale:0;
+  &.show{scale:1;}
+}
 
 
 @media(prefers-reduced-motion){
