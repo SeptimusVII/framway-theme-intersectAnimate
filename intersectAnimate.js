@@ -4,7 +4,8 @@ const observer = new IntersectionObserver((entries)=>{
 		if (entry.isIntersecting) {
 			entry.target.classList.add('show')
 		} else {
-			entry.target.classList.remove('show')
+			if (entry.target.classList.contains('replay')) 
+				entry.target.classList.remove('show')
 		}
 	})
 });
