@@ -4,6 +4,7 @@ import 'lenis/dist/lenis.css';
 // Initialize Lenis
 const lenis = new Lenis({
   autoRaf: true,
+  allowNestedScroll: true,
 });
 
 // Listen for the scroll event and log the event data
