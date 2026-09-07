@@ -12,6 +12,15 @@ lenis.on('scroll', (e) => {
   // console.log(e);
 });
 
+
+document.querySelectorAll('.table-responsive').forEach((el)=>{
+    const l = new Lenis({
+      autoRaf: true,
+      orientation: 'horizontal',
+      wrapper: el
+    });
+})
+
 const observer = new IntersectionObserver((entries)=>{
 	entries.forEach((entry)=>{
 		// console.log(entry)
