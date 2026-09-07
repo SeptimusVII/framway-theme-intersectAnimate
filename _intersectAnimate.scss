@@ -48,6 +48,7 @@
 html.lenis,
 html.lenis body {
   height: auto;
+  overflow-x: clip;
 }
 
 .lenis:not(.lenis-autoToggle).lenis-stopped {
